@@ -8,6 +8,8 @@ void setup() {
 
 void draw() { 
   background(#231709);  
+  fill(#401F1F);
+  rect(0, 600, 10000, 300);  //ground
   eye(eyeX, 500, eyeAngle); 
   eyeX = eyeX + 8;  //movement command and speed 
   eyeAngle = eyeAngle + 5;  //rotation command speed 
@@ -26,9 +28,9 @@ pushMatrix();
   fill(255); 
   ellipse(0, 0, 130, 130); //white part of eye 
   fill(#24B9B1); 
-  ellipse(0, 0, 30, 100); //pupil 
+  ellipse(0, 0, 40, 100); //pupil 
   fill(#17716C); 
-  ellipse(0, 0, 15, 67);  
+  ellipse(0, 0, 21, 67);  //darker part of pupil
 popMatrix(); 
 } 
 void sword(int x, int y) { 
